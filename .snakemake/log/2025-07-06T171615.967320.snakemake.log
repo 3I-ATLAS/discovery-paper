@@ -1,0 +1,76 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count    min threads    max threads
+-------------------------  -------  -------------  -------------
+syw__compile_copy_pdf            1              1              1
+syw__compile_copy_synctex        1              1              1
+syw__compile_pdf                 1              1              1
+syw__compile_setup               1              1              1
+syw__dag                         1              1              1
+syw__main                        1              1              1
+total                            6              1              1
+
+Select jobs to execute...
+
+[Sun Jul  6 17:16:17 2025]
+Job 4: Building the workflow graph...
+Reason: Missing output files: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/flags/SYW__DAG
+Downstream jobs will be updated after completion.
+
+Touching output file /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/flags/SYW__DAG.
+[Sun Jul  6 17:16:17 2025]
+Finished job 4.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:16:17 2025]
+Job 3: Generating the article stylesheet metadata...
+Reason: Missing output files: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork.otf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/xstring.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/xstring.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-logo.pdf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/listofitems.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-metadata.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/lineno.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-stamp.pdf; Updated input files: src/tex/ms.tex
+
+[Sun Jul  6 17:16:17 2025]
+Finished job 3.
+2 of 6 steps (33%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:16:17 2025]
+Job 2: Compiling the article PDF...
+Reason: Missing output files: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.pdf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.synctex.gz; Input files updated by another job: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/xstring.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/lineno.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/xstring.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-logo.pdf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/listofitems.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-metadata.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork.otf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/showyourwork-stamp.pdf
+
+Activating conda environment: .snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+[Sun Jul  6 17:16:20 2025]
+Finished job 2.
+3 of 6 steps (50%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:16:20 2025]
+Job 1: Copying the article PDF...
+Reason: Missing output files: ms.pdf; Input files updated by another job: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.pdf
+
+[Sun Jul  6 17:16:20 2025]
+Finished job 1.
+4 of 6 steps (67%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:16:20 2025]
+Job 5: Copying the article synctex...
+Reason: Missing output files: ms.synctex.gz; Input files updated by another job: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/compile/ms.synctex.gz
+
+[Sun Jul  6 17:16:20 2025]
+Finished job 5.
+5 of 6 steps (83%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:16:20 2025]
+localrule syw__main:
+    input: ms.pdf, ms.synctex.gz
+    jobid: 0
+    reason: Input files updated by another job: ms.pdf, ms.synctex.gz
+    resources: tmpdir=/var/folders/9s/jb487nv52hs8n0q5ftmb1lk80000gn/T
+
+[Sun Jul  6 17:16:20 2025]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: .snakemake/log/2025-07-06T171615.967320.snakemake.log

@@ -1,0 +1,73 @@
+% Define document class
+% \documentclass[manuscript]{aastex7}
+\documentclass[twocolumn,twocolappendix]{aastex7}
+\usepackage{showyourwork}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{datetime}
+\usepackage{CJK}
+\usepackage{amsmath}
+\yyyymmdddate
+\usepackage{mathtools}
+\usepackage{savesym}
+\let\tablenum\relax
+\usepackage{siunitx}[=v2]
+\usepackage{chemformula}
+% redefine deluxetable for compatibility with the array package.
+\let\oldenddeluxetable\endxdeluxetable
+\let\olddeluxetable\xdeluxetable
+\makeatletter
+\renewenvironment{xdeluxetable}[1]{
+\olddeluxetable{[#1]}
+\def\pt@format{\string#1}%
+}{\oldenddeluxetable}
+\makeatother
+
+\sisetup{separate-uncertainty=true,multi-part-units=single}
+
+\DeclareSIUnit{\mag}{mag}
+\DeclareSIUnit{\mas}{mas}
+\DeclareSIUnit{\electron}{e^-}
+\DeclareSIUnit{\pixel}{px}
+\DeclareSIUnit{\adu}{adu}
+\DeclareSIUnit{\year}{yr}
+\DeclareSIUnit{\parsec}{pc}
+\DeclareSIUnit{\au}{au}
+\DeclareSIUnit{\Msun}{M_\odot}
+\DeclareSIUnit{\Mjup}{M_J}
+
+
+% Begin!
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+% Title
+\title{Discovery and Preliminary Characterization of a Third Interstellar Object: 3I/ATLAS}
+
+% Author list
+\author[orcid=0000-0002-0726-6480]{Darryl Z. Seligman}
+\altaffiliation{NSF Astronomy and Astrophysics Postdoctoral Fellow}
+\affiliation{Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA}
+\email[show]{dzs@msu.edu}
+
+\begin{abstract}
+Words
+\end{abstract}
+
+\keywords{\uat{Asteroids}{72} --- \uat{Comets}{280} --- \uat{Meteors}{1041} --- \uat{Interstellar Objects}{52}}
+
+\section{Introduction}\label{sec:intro}
+
+\facility{}
+
+\software{}
+
+\bibliography{references}
+
+
+\section{Data and Code Availability}
+
+
+
+\end{CJK*}
+\end{document}

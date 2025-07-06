@@ -1,0 +1,11 @@
+prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-icu
+Description: HarfBuzz text shaping library ICU integration
+Version: 9.0.0
+Requires: harfbuzz =  9.0.0
+Requires.private: icu-uc >=  49.0
+Libs: -L${libdir} -lharfbuzz-icu
+Cflags: -I${includedir}/harfbuzz

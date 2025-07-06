@@ -1,0 +1,50 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count    min threads    max threads
+---------------------  -------  -------------  -------------
+syw__main                    1              1              1
+syw__preprocess              1              1              1
+syw__preprocess_setup        1              1              1
+syw__preprocess_xml          1              1              1
+total                        4              1              1
+
+Select jobs to execute...
+
+[Sun Jul  6 17:12:19 2025]
+Job 3: Preprocess: Setting up...
+Reason: Missing output files: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/ms.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.otf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/xstring.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork-stamp.pdf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/listofitems.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/lineno.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/xstring.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork-logo.pdf
+
+[Sun Jul  6 17:12:19 2025]
+Finished job 3.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Sun Jul  6 17:12:19 2025]
+Job 2: Preprocess: Generating XML tree...
+Reason: Missing output files: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.xml; Input files updated by another job: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/ms.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.otf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/xstring.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork-stamp.pdf, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/listofitems.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/lineno.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/xstring.sty, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.tex, /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork-logo.pdf
+
+Activating conda environment: .snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+[Sun Jul  6 17:12:25 2025]
+Error in rule syw__preprocess_xml:
+    jobid: 2
+    output: /Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/showyourwork.xml
+    conda-env: /Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+    shell:
+        
+        cd "/Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess"
+        tectonic                      \
+            --chatter minimal         \
+            --keep-logs               \
+            --keep-intermediates      \
+            -r 0                      \
+                    \
+            "/Users/belugawhale/Documents/GitHub/discovery-paper/.showyourwork/preprocess/ms.tex"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-07-06T171208.460825.snakemake.log

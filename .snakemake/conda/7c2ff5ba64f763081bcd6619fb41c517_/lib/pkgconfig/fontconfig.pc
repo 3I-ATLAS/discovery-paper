@@ -1,0 +1,16 @@
+prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+sysconfdir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/etc
+localstatedir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/var
+confdir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/etc/fonts
+cachedir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/var/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.15.0
+Requires: freetype2 >=  21.0.15
+Requires.private: expat
+Libs: -L${libdir} -lfontconfig
+Cflags: -I${includedir}

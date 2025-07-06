@@ -1,0 +1,13 @@
+prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+exec_prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+libdir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/lib
+includedir=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 26.2.20
+Requires: 
+Libs: -L/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

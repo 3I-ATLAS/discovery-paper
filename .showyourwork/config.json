@@ -1,0 +1,134 @@
+{
+    "cache": {
+        "main": {
+            "sandbox": null,
+            "zenodo": null
+        }
+    },
+    "cache_on_zenodo": true,
+    "dag": {
+        "engine": "sfdp",
+        "graph_attr": {
+            "ranksep": "1",
+            "nodesep": "0.65"
+        },
+        "group_by_type": false,
+        "node_attr": {
+            "shape": "box",
+            "penwidth": "2",
+            "width": "1"
+        },
+        "render": false,
+        "ignore_files": []
+    },
+    "datasets": {},
+    "dependencies": {
+        "src/tex/ms.tex": [
+            "src/tex/Orcid-ID.png"
+        ]
+    },
+    "ms_name": "ms",
+    "optimize_caching": false,
+    "overleaf": {
+        "gh_actions_sync": true,
+        "id": "672984c1507f1f33c145dd48",
+        "pull": [
+            "src/tex/ms.tex",
+            "src/tex/references.bib",
+            "src/tex/authors.tex",
+            "src/tex/sections/01_introduction.tex",
+            "src/tex/sections/02_observations.tex"
+        ],
+        "push": [
+            "src/tex/figures",
+            "src/tex/output"
+        ]
+    },
+    "require_inputs": true,
+    "run_cache_rules_on_ci": false,
+    "scripts": {
+        "py": "python {script}"
+    },
+    "stamp": {
+        "angle": -20.0,
+        "enabled": false,
+        "size": 0.75,
+        "url": {
+            "enabled": true,
+            "maxlen": 40
+        },
+        "xpos": 0.5,
+        "ypos": 0.5,
+        "text": "unknown",
+        "version": "dev"
+    },
+    "synctex": true,
+    "tectonic_args": [],
+    "verbose": false,
+    "version": "0.4.3rc3.dev9+gf173efb.d20241016",
+    "user_args": [],
+    "margin_icons": {
+        "colors": {
+            "github": "0.12,0.47,0.71",
+            "sandbox": "0.80,0.14,0.19",
+            "cache": "0.12,0.47,0.71",
+            "dataset": "0.12,0.47,0.71"
+        },
+        "monochrome": false,
+        "horizontal_offset": ""
+    },
+    "preprocess_arxiv_script": null,
+    "user_abspath": "/Users/belugawhale/Documents/GitHub/discovery-paper",
+    "workflow_abspath": "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow",
+    "tex_files_in": [
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/xstring.sty",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/showyourwork-logo.pdf",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/showyourwork.otf",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/xstring.tex",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/showyourwork-stamp.pdf",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/listofitems.tex",
+        "/opt/anaconda3/envs/showyourwork/lib/python3.10/site-packages/showyourwork/workflow/resources/tex/lineno.sty"
+    ],
+    "ms_tex": "src/tex/ms.tex",
+    "ms_pdf": "ms.pdf",
+    "config_json": ".showyourwork/config.json",
+    "stylesheet": "showyourwork.tex",
+    "stylesheet_meta_file": "showyourwork-metadata.tex",
+    "script_extensions": [
+        "py"
+    ],
+    "tree": {
+        "figures": {
+            "free-floating-dynamic": {
+                "script": null,
+                "graphics": [
+                    "src/tex/Orcid-ID.png"
+                ],
+                "datasets": [],
+                "dependencies": [],
+                "command": null,
+                "static": false
+            },
+            "free-floating-static": {
+                "script": null,
+                "graphics": [],
+                "datasets": [],
+                "dependencies": [],
+                "command": "cp  src/tex/figures",
+                "static": true
+            }
+        },
+        "files": []
+    },
+    "cached_deps": [],
+    "dag_dependencies": {},
+    "dag_dependencies_recursive": {},
+    "labels": {},
+    "git_sha": "c7678b2b2cd10f85fb2e4f5b0e179ae1dd58002a",
+    "git_url": "unknown",
+    "git_slug": "unknown",
+    "git_branch": "main",
+    "github_actions": false,
+    "github_runid": "",
+    "git_tag": ""
+}

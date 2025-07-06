@@ -1,0 +1,10 @@
+prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: Pixman
+Description: The pixman library (version 1)
+Version: 0.46.2
+Libs: -L${libdir} -lpixman-1
+Libs.private: -lm
+Cflags: -I${includedir}/pixman-1

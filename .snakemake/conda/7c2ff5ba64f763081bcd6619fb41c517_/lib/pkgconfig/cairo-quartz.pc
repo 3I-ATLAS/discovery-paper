@@ -1,0 +1,10 @@
+prefix=/Users/belugawhale/Documents/GitHub/discovery-paper/.snakemake/conda/7c2ff5ba64f763081bcd6619fb41c517_
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: cairo-quartz
+Description: Quartz surface backend for cairo graphics library
+Version: 1.18.0
+Requires: cairo
+Libs: -framework CoreFoundation -framework ApplicationServices
+Cflags: -I${includedir}

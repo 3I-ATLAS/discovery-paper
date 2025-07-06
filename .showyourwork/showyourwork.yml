@@ -1,0 +1,48 @@
+cache:
+  main:
+    sandbox: null
+cache_on_zenodo: true
+dag:
+  engine: sfdp
+  graph_attr:
+    nodesep: '0.65'
+    ranksep: '1'
+  group_by_type: false
+  node_attr:
+    penwidth: '2'
+    shape: box
+    width: '1'
+  render: false
+datasets: null
+dependencies: null
+ms_name: ms
+optimize_caching: false
+overleaf:
+  gh_actions_sync: true
+  id: 672984c1507f1f33c145dd48
+  pull:
+  - src/tex/ms.tex
+  - src/tex/references.bib
+  - src/tex/authors.tex
+  - src/tex/sections/01_introduction.tex
+  - src/tex/sections/02_observations.tex
+  push:
+  - src/tex/figures
+  - src/tex/output
+require_inputs: true
+run_cache_rules_on_ci: false
+scripts:
+  py: python {script}
+stamp:
+  angle: -20.0
+  enabled: false
+  size: 0.75
+  url:
+    enabled: true
+    maxlen: 40
+  xpos: 0.5
+  ypos: 0.5
+synctex: true
+tectonic_args: []
+verbose: false
+version: 0.4.3rc3.dev9+gf173efb.d20241016
