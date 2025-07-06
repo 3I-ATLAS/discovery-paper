@@ -10,7 +10,7 @@
 <a href="https://github.com/afeinstein20/discovery-paper/raw/main-pdf/arxiv.tar.gz">
 <img src="https://img.shields.io/badge/article-tarball-blue.svg?style=flat" alt="Article tarball"/>
 </a>
-<a href="https://github.com/afeinstein20/discovery-paper/ms.pdf">
+<a href="https://github.com/afeinstein20/discovery-paper/blob/main/ms.pdf">
 <img src="https://img.shields.io/badge/article-pdf-blue.svg?style=flat" alt="Read the article"/>
 </a>
 </p>
