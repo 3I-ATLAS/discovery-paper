@@ -1,6 +1,8 @@
 # Enable rule caching on Zenodo?
 cache_on_zenodo: true
 
+latex_engine: xelatex
+
 # Workflow graph (DAG) generation
 dag:
   # Generate `dag.pdf` on each build?

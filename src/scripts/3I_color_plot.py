@@ -68,8 +68,8 @@ plt.fill_betweenx(np.linspace(0,0.1,10),4900,5300 ,alpha=0.3,color='red', lw=lw)
 
 plt.text(4400, 0.15,'SNIFS Dichroic Mask')
 
-plt.xlabel('Wavelength ($\AA$)')
-plt.ylabel('Normalized Reflectance')
+plt.xlabel('Wavelength ($\AA$)', fontsize=18)
+plt.ylabel('Normalized Reflectance', fontsize=18)
 plt.legend(loc=2, fontsize=16, facecolor='w')
 plt.grid(alpha=0.4)
 plt.xlim(3000,9500)

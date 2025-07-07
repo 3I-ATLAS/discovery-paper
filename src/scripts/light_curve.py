@@ -41,7 +41,8 @@ def plot(LC, ax, dic):
     return
 
 # Create the figure
-fig, axs = plt.subplots(ncols=4, nrows=1, tight_layout=False, figsize=(18,5))
+fig, axs = plt.subplots(ncols=4, nrows=1, tight_layout=False, figsize=(18,4.5),
+                        gridspec_kw={'wspace':0.1})
 fig.set_facecolor('w')
 
 # Set the start and end dates for each subplot
@@ -139,7 +140,7 @@ for a in axs:
     a.set_rasterized(True)
 
 axs[0].set_ylabel('Magnitude', fontsize=18)
-plt.subplots_adjust(wspace=0.01)
+plt.subplots_adjust(wspace=0.0)
 
 plt.savefig('./src/tex/figures/lightcurve_interstellar.png',
             bbox_inches='tight', dpi=600)

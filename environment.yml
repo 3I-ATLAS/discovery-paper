@@ -7,3 +7,4 @@ dependencies:
       - matplotlib==3.10.0
       - astropy==6.1.7
       - scipy
+      - showyourwork==0.4.2
