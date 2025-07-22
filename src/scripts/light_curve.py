@@ -23,7 +23,9 @@ LC1 = np.vstack([np.load('./src/data/LCO_1.npy'),
                  np.load('./src/data/LCO_2.npy')])
 
 # Load the TRAPPIST data
-LC2 = np.load('./src/data/TRAPPIST.npy')
+trap = Table.read('./src/data/photom-soustraction-3I_TRAPPIST.obs', format='ascii')
+LC2 = np.array([trap['epoch'], trap['mag'], trap['err_abs']]).T
+print(LC2)
 
 # Load the ATLAS data
 LC3 = np.load('./src/data/ATLAS.npy')
@@ -120,9 +122,9 @@ for j in range(len(axs)):
 # Add the grid to each subplot. Needed to do this to make sure
 #   it was consistent
 for a in axs:
-    a.set_ylim(18.4, 17.)
-    a.set_yticks(np.flip(np.arange(17, 18.4, 0.2)))
-    for j in np.arange(17., 18.4, 0.2):
+    a.set_ylim(18.4, 17.4)
+    a.set_yticks(np.flip(np.arange(17.4, 18.4, 0.2)))
+    for j in np.arange(17.4, 18.4, 0.2):
         a.grid(alpha=0.3, color='gray')
         a.axhline(j, color='gray', alpha=0.3, lw=0.5)
 

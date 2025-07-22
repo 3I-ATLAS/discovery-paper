@@ -22,7 +22,7 @@ fig.set_facecolor('w')
 lw = 3
 
 plt.semilogy(dat[:,0], dat[:,1]/dat[:,3], '#011638', lw=lw,
-             label='Volume / Crossing time [au$^3$ yr$^{-1}$]')
+             label='Volume / Crossing\n'+'time [au$^3$ yr$^{-1}$]')
 plt.semilogy(dat[:,0], dat[:,1], '#9055a2', lw=lw,
              label='Volume [au$^3$]')
 plt.semilogy(dat[:,0], dat[:,3], '#e8c1c5', lw=lw,

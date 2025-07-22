@@ -41,7 +41,7 @@ atlas_normref = atlas_3i[:,1]/1.03
 
 #Plot data
 d_type_sig = d_type_err(d_types[:,0],d_type_normref)
-fig = plt.figure(figsize=(10,7))
+fig = plt.figure(figsize=(8,6))
 fig.set_facecolor('w')
 
 alpha = 0.25
@@ -70,7 +70,7 @@ plt.text(4400, 0.15,'SNIFS Dichroic Mask')
 
 plt.xlabel('Wavelength ($\AA$)', fontsize=18)
 plt.ylabel('Normalized Reflectance', fontsize=18)
-plt.legend(loc=2, fontsize=16, facecolor='w')
+plt.legend(loc=2, facecolor='w')
 plt.grid(alpha=0.4)
 plt.xlim(3000,9500)
 plt.ylim(0,3)
